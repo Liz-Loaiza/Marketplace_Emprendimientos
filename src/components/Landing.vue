@@ -1,14 +1,13 @@
 <template>
     <div>
     <app-header></app-header>
-    <app-footer></app-footer>
     <!-- ======= Hero Section ======= -->
     <section id="hero">
         <div class="hero-container">
-        <h3>Welcome to <strong>Tempo</strong></h3>
-        <h1>We're Creative Agency</h1>
-        <h2>We are team of talented designers making websites with Bootstrap</h2>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <h3>Bienvenidos a <strong>EMPRENDE COLOMBIA</strong></h3>
+        <h1>Un MarketPlace muy Colombiano</h1>
+        <h2>Impulsamos los sueños de los emprendedores y el desarrollo de todo un país</h2>
+        <a href="#about" class="btn-get-started scrollto">Empecemos</a>
         </div>
     </section><!-- End Hero -->
 
@@ -19,9 +18,9 @@
         <div class="container">
 
             <div class="section-title">
-            <h2>About</h2>
-            <h3>Learn More <span>About Us</span></h3>
-            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            <!-- <h2>Nosotros</h2> -->
+            <h3>Acerca de <span>Emprende</span></h3>
+            <p>Un lugar ideal para los emprendedores colombianos, aquí se construye una plataforma que reúne a todos los soñadores y empresarios a nivel nacional.</p>
             </div>
 
             <div class="row content">
@@ -31,18 +30,20 @@
                 magna aliqua.
                 </p>
                 <ul>
-                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-                <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                <li><i class="ri-check-double-line"></i> Tienda online especializada "Hecho en Colombia".</li>
+                <li><i class="ri-check-double-line"></i> Envio a todos los lugares del país.</li>
+                <li><i class="ri-check-double-line"></i> Conectamos a emprendedores y clientes.</li>
                 </ul>
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0">
                 <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
+                Reconociendo que Colombia es uno de los paises más emprendedores de la Ocde,
+                apostamos por brindar un espacio Online para esas personas con la capacidad de 
+                ofrecer al mercado productos o servicios hechos en Colombia, permitirles aumentar 
+                sus ventas, incrementar el tráfico de clientes y generar confianza en las transacciones
+                 de compra online, entre estos y otros beneficios, por ello te invitamos a unirte a nuestra comunidad.
                 </p>
-                <a href="#" class="btn-learn-more">Learn More</a>
+                <a href="#" class="btn-learn-more">Ver más</a>
             </div>
             </div>
 
@@ -54,42 +55,45 @@
         <div class="container">
 
             <div class="section-title">
-            <h2>Services</h2>
-            <h3>We do offer awesome <span>Services</span></h3>
-            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            <h2>Categorías</h2>
+            <h3>Ofrecemos productos y servicios en diferentes <span>Categorías</span></h3>
+            <p>Para facilitar tu búsqueda puedes encontrar la información por tus emprendimientos favoritos o por la categoría de los productos que estas buscando.</p>
             </div>
 
             <div class="row">
             <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                 <div class="icon-box">
                 <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                <h4 class="title"><a href="">kakahuat</a></h4>
+                <p class="description"> empresa Santandereana dedicada a la fabricación de chocolatería fina y pasteleria Francesa que trabaja con el mejor talento humano, para endulzar los buenos momentos de sus clientes.</p>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                 <div class="icon-box">
                 <div class="icon"><i class="bx bx-file"></i></div>
-                <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                <h4 class="title"><a href="">PitNatu</a></h4>
+                <p class="description">Es la única compañía latinoamericana dedicada a producir y comercializar pitillos 100% Naturales, 
+                    y la única en el mundo en fabricar y comercializar  mezcladores de bebida calientes que en su proceso de degradación pueden germinar en una plata o fertilizar un entorno natural.</p>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                 <div class="icon-box">
                 <div class="icon"><i class="bx bx-tachometer"></i></div>
-                <h4 class="title"><a href="">Magni Dolores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                <h4 class="title"><a href="">Naty London</a></h4>
+                <p class="description">Empresa caleña dedicada al diseño de zapatos, carteras, bolsos y accesorios de la mejor calidad y 100% producto colombiano.”
+
+</p>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                 <div class="icon-box">
                 <div class="icon"><i class="bx bx-world"></i></div>
-                <h4 class="title"><a href="">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                </div>
+                <h4 class="title"><a href="">Educambio</a></h4>
+                <p class="description"> Cuadernos ecológicos con diseños exclusivos realizados por artistas, con la compra de estos se aporta al programa Becas de Cambio que libera esta fundación.</p>
+‍                </div>
             </div>
 
             </div>
@@ -105,73 +109,73 @@
             <div class="col-lg-3 col-md-4 col-6 col-6">
                 <div class="icon-box">
                 <i class="ri-store-line" style="color: #ffbb2c;"></i>
-                <h3><a href="">Lorem Ipsum</a></h3>
+                <h3><a href="">Servicios</a></h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6">
                 <div class="icon-box">
                 <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-                <h3><a href="">Dolor Sitema</a></h3>
+                <h3><a href="">Accesorios y Joyas</a></h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4 mt-md-0">
                 <div class="icon-box">
                 <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-                <h3><a href="">Sed perspiciatis</a></h3>
+                <h3><a href="">Papelería y Mercería</a></h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4 mt-lg-0">
                 <div class="icon-box">
                 <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-                <h3><a href="">Magni Dolores</a></h3>
+                <h3><a href="">Hogar y Muebles</a></h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
                 <div class="icon-box">
                 <i class="ri-database-2-line" style="color: #47aeff;"></i>
-                <h3><a href="">Nemo Enim</a></h3>
+                <h3><a href="">Agro</a></h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
                 <div class="icon-box">
                 <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-                <h3><a href="">Eiusmod Tempor</a></h3>
+                <h3><a href="">Alimentos y bebidas</a></h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
                 <div class="icon-box">
                 <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-                <h3><a href="">Midela Teren</a></h3>
+                <h3><a href="">Juegos y Juguetes</a></h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
                 <div class="icon-box">
                 <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-                <h3><a href="">Pira Neve</a></h3>
+                <h3><a href="">Deportes y Fitness</a></h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
                 <div class="icon-box">
                 <i class="ri-anchor-line" style="color: #b2904f;"></i>
-                <h3><a href="">Dirada Pack</a></h3>
+                <h3><a href="">Salud y equipamento médico</a></h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
                 <div class="icon-box">
                 <i class="ri-disc-line" style="color: #b20969;"></i>
-                <h3><a href="">Moton Ideal</a></h3>
+                <h3><a href="">Ropa</a></h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
                 <div class="icon-box">
                 <i class="ri-base-station-line" style="color: #ff5828;"></i>
-                <h3><a href="">Verdo Park</a></h3>
+                <h3><a href="">Animales y mascotas</a></h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
                 <div class="icon-box">
                 <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-                <h3><a href="">Flavor Nivelanda</a></h3>
+                <h3><a href="">Otras categorías</a></h3>
                 </div>
             </div>
             </div>
@@ -197,18 +201,19 @@
         <div class="container">
 
             <div class="section-title">
-            <h2>Portfolio</h2>
-            <h3>Check our <span>Portfolio</span></h3>
-            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            <h2>Productos</h2>
+            <h3> <span>Productos</span></h3>
+            <p>Te mostramos aqui una pequeña muestra de los productos que podras encontrar en nuestra plataforma.</p>
             </div>
 
             <div class="row">
             <div class="col-lg-12 d-flex justify-content-center">
                 <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-card">Card</li>
-                <li data-filter=".filter-web">Web</li>
+                <li data-filter="*" class="filter-active">Todos</li>
+                <li data-filter=".filter-app">Lo mas vendido</li>
+                <li data-filter=".filter-card">Recomendaciones</li>
+                <li data-filter=".filter-web">Ofertas</li>
+                
                 </ul>
             </div>
             </div>
@@ -216,17 +221,17 @@
             <div class="row portfolio-container">
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <img src="@/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                <img src="@/assets/img/portfolio/PerezosoCosido.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                 <h4>App 1</h4>
                 <p>App</p>
-                <a href="@/assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="@/assets/img/portfolio/PerezosoCosido.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <img src="@/assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                <img src="@/assets/img/portfolio/cojin bebe.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                 <h4>Web 3</h4>
                 <p>Web</p>
@@ -236,7 +241,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <img src="@/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                <img src="@/assets/img/portfolio/vestido.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                 <h4>App 2</h4>
                 <p>App</p>
@@ -246,7 +251,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <img src="@/assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                <img src="@/assets/img/portfolio/tennis.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                 <h4>Card 2</h4>
                 <p>Card</p>
@@ -256,7 +261,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <img src="@/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+                <img src="@/assets/img/portfolio/bolso.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                 <h4>Web 2</h4>
                 <p>Web</p>
@@ -266,7 +271,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <img src="@/assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+                <img src="@/assets/img/portfolio/cafe_quindio.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                 <h4>App 3</h4>
                 <p>App</p>
@@ -276,7 +281,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <img src="@/assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+                <img src="@/assets/img/portfolio/caja-de-trufas.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                 <h4>Card 1</h4>
                 <p>Card</p>
@@ -286,7 +291,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <img src="@/assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+                <img src="@/assets/img/portfolio/cerveza.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                 <h4>Card 3</h4>
                 <p>Card</p>
@@ -296,7 +301,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <img src="@/assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+                <img src="@/assets/img/portfolio/gatos.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                 <h4>Web 3</h4>
                 <p>Web</p>
@@ -385,58 +390,79 @@
 
             <div class="section-title">
             <h2>F.A.Q</h2>
-            <h3>Frequently Asked <span>Questions</span></h3>
+            <h3>Preguntas <span>frecuentes</span> </h3>
             </div>
 
             <ul class="faq-list">
 
             <li>
-                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">¿Cuál es el tiempo de espera? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq1" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    Los envíos nacionales pueden tardar de 3 a 5 días.
+
+                    Recuerda que el tiempo de entrega depende de diferentes factores:
+
+                    Características del producto (peso, dimensiones).
+                    Distancia entre el lugar de envío y el lugar de entrega.
+                    Paquetería que hace el envío.
+                    Tipo de envío elegido: estándar o express*.
+                    *Con el envío express tu producto llegará en un tiempo menor al establecido al pagar un monto extra en el costo de envío. Ten en cuenta que esta opción no aplica para todos los productos.
                 </p>
                 </div>
             </li>
 
             <li>
-                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">¿Cómo solicito la factura de mi compra? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq2" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                   Sí, ponte en contacto con el vendedor a quien realizaste la compra.
+                   El vendedor tiene hasta 15 días para proporcionarte la copia de tu factura.
+                   De ser necesario, comunícate con nosotros al correo ayuda@detodocolombia.com con los detalles de tu orden. Estaremos encantados de ayudarte.
                 </p>
                 </div>
             </li>
 
             <li>
-                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">¿Cómo compro al por mayor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq3" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                    ¿Cómo compro al por mayor?
                 </p>
                 </div>
             </li>
 
             <li>
-                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question"> ¿Qué hago si tengo un problema con mi pedido? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq4" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    Contacta al vendedor e indícale como prefieres que proceda: Si el vendedor no te presenta solución en un tiempo de 5 días hábiles posteriores al contacto, escríbenos a ayuda@detodocolombia.com con los detalles de tu orden.
+                    Si recibiste tu pedido y llegó en malas condiciones, por favor toma fotografías en las que se evidencie y ponte en contacto con el vendedor. Tienes 5 días a partir de la entrega para reportar la novedad.
+
                 </p>
                 </div>
             </li>
 
             <li>
-                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">¿Puedo cambiar o cancelar mi pedido? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq5" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                    SI AÚN NO HAS RECIBIDO UN CORREO Y/O SMS CONFIRMANDO EL ENVÍO- (» Se ha añadido una nota a tu pedido»). Puedes realizar la cancelación sin ningún problema contactando al vendedor a través de “Obtén soporte”.
+
+                    Si el vendedor NO se comunica contigo al siguiente día, por favor escríbenos a ayuda@detodocolombia.com con los detalles de tu orden, y nosotros lo cancelaremos por ti.
+
+                    -Si tu pago está pendiente, procederemos con la cancelación y se cerrará el proceso.
+
+                    -Si tu pago fue aprobado, procederemos a la devolución por el mismo medio que se efectuó el pago.
+                    SI RECIBISTE UN CORREO Y/O SMS CONFIRMANDO EL ENVÍO, es decir el proveedor despachó el pedido. (» Se ha añadido una nota a tu pedido»).
+
+                     Lamentablemente NO podremos realizar la cancelación pues tu pedido ya está en camino. Sin embargo, si recibes tu producto y no te encuentras satisfecho con él, o deseas un producto diferente, puedes devolverlo asumiendo el costo de envío.
                 </p>
                 </div>
             </li>
 
             <li>
-                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question"> ¿Hacen envios fuera de Colombia? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq6" class="collapse" data-bs-parent=".faq-list">
                 <p>
                     Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
@@ -454,12 +480,30 @@
         <div class="container">
 
             <div class="section-title">
-            <h2>Team</h2>
-            <h3>Our Hardworking <span>Team</span></h3>
-            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            <h2>Equipo</h2>
+            <h3>Nuestro gran <span>Equipo</span></h3>
+            <p>Contamos con personas apasionadas por lo que hacen, dispuestas a dar una milla extra en la contrucción de país.</p>
             </div>
 
             <div class="row">
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member">
+                <div class="member-img">
+                    <img src="@/assets/img/team/Juanfelipe.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                    <!-- <a href=""><i class="bi bi-twitter"></i></a> -->
+                    <a href="https://www.facebook.com/gallegomesa1"><i class="bi bi-facebook"></i></a>
+                    <!-- <a href=""><i class="bi bi-instagram"></i></a> -->
+                    <a href="https://www.linkedin.com/in/juan-felipe-gallego-mesa-4a9978215"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="member-info">
+                    <h4>Juan Felipe Gallego</h4>
+                    <span>Product owner</span>
+                </div>
+                </div>
+            </div>
 
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member">
@@ -468,13 +512,13 @@
                     <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <!-- <a href=""><i class="bi bi-instagram"></i></a> -->
                     <a href=""><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="member-info">
-                    <h4>Walter White</h4>
-                    <span>Chief Executive Officer</span>
+                    <h4>Esteban Alirio Forero</h4>
+                    <span>Equipo de desarrollo</span>
                 </div>
                 </div>
             </div>
@@ -482,17 +526,17 @@
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member">
                 <div class="member-img">
-                    <img src="@/assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                    <img src="@/assets/img/team/team-1.jpg" class="img-fluid" alt="">
                     <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <!-- <a href=""><i class="bi bi-twitter"></i></a> -->
                     <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <!-- <a href=""><i class="bi bi-instagram"></i></a> -->
+                    <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
                     </div>
                 </div>
                 <div class="member-info">
-                    <h4>Sarah Jhonson</h4>
-                    <span>Product Manager</span>
+                    <h4>John Alejandro Garzon</h4>
+                    <span>Equipo de desarrollo</span>
                 </div>
                 </div>
             </div>
@@ -500,35 +544,17 @@
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member">
                 <div class="member-img">
-                    <img src="@/assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                    <img src="@/assets/img/team/Liceth.jpeg" class="img-fluid" alt="">
                     <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <!-- <a href=""><i class="bi bi-twitter"></i></a> -->
+                    <a href="https://es-la.facebook.com/liceth.tita"><i class="bi bi-facebook"></i></a>
+                    <!-- <a href=""><i class="bi bi-instagram"></i></a> -->
+                    <a href="https://co.linkedin.com/in/liceth-tatiana-loaiza-naranjo-a11585140"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="member-info">
-                    <h4>William Anderson</h4>
-                    <span>CTO</span>
-                </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member">
-                <div class="member-img">
-                    <img src="@/assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                    <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-                <div class="member-info">
-                    <h4>Amanda Jepson</h4>
-                    <span>Accountant</span>
+                    <h4>Liceth Tatiana loaiza</h4>
+                    <span>Equipo de desarrollo</span>
                 </div>
                 </div>
             </div>
@@ -543,9 +569,9 @@
         <div class="container">
 
             <div class="section-title">
-            <h2>Contact</h2>
-            <h3>Contact <span>Us</span></h3>
-            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            <h2>Contacto</h2>
+            <h3>  <span>Nosotros</span></h3>
+            <p>Comunicate con nosotros, cuentanos aqui tu experiencia o si tienes inquietudes, quejas o reclamos.</p>
             </div>
 
             <div>
@@ -558,20 +584,20 @@
                 <div class="info">
                 <div class="address">
                     <i class="bi bi-geo-alt"></i>
-                    <h4>Location:</h4>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <h4>Ubicación:</h4>
+                    <p>Carre 52A #3-75, Local 101</p>
                 </div>
 
                 <div class="email">
                     <i class="bi bi-envelope"></i>
                     <h4>Email:</h4>
-                    <p>info@example.com</p>
+                    <p> Servicioalcliente@emprende.com</p>
                 </div>
 
                 <div class="phone">
                     <i class="bi bi-phone"></i>
-                    <h4>Call:</h4>
-                    <p>+1 5589 55488 55s</p>
+                    <h4>Teléfono:</h4>
+                    <p>(+57) 315 588 9556</p>
                 </div>
 
                 </div>
@@ -583,24 +609,24 @@
                 <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                 <div class="row">
                     <div class="col-md-6 form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
                     </div>
                     <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                     </div>
                 </div>
                 <div class="form-group mt-3">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
                 </div>
                 <div class="form-group mt-3">
-                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                    <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
                 </div>
                 <div class="my-3">
-                    <div class="loading">Loading</div>
+                    <div class="loading">Cargando</div>
                     <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    <div class="sent-message">Tu mensaje ha sido enviado, GRACIAS!!</div>
                 </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
+                <div class="text-center"><button type="submit">Enviar</button></div>
                 </form>
 
             </div>
@@ -611,10 +637,10 @@
         </section><!-- End Contact Section -->
 
     </main><!-- End #main -->
-
+    
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+        <app-footer></app-footer>
   
     </div>
 </template>
@@ -634,6 +660,6 @@ export default {
 <style scoped>
 
     #hero{
-          background: url("../assets/img/hero-bg.jpg") top center;
+          background: url("../assets/img/campo.jpg") top center;
     }
 </style>
