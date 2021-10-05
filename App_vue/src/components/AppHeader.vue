@@ -28,7 +28,7 @@
                         <li><a href="#">Deep Drop Down 5</a></li>
                         </ul>
                     </li> -->
-                    <li><a href="#">Inicie Sesion</a></li>
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Inicie Sesion</a></li>
                     <!-- <li><a href="#">Drop Down 3</a></li>
                     <li><a href="#">Drop Down 4</a></li> -->
                     </ul>
@@ -40,5 +40,28 @@
 
             </div>
         </header><!-- End Header -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="card mt-4">
+            <div class="card-body">
+                <form action="">
+                    <label  class="form-label" for="usuario">Nombre de usuario</label>
+                    <input class ="form-control" type="text" id="email"> 
+                    <label  class="form-label" for="pass">Contraseña</label>
+                    <input class ="form-control" type="password" id="pass"> 
+                    <input class = "btn btn-primary" type="button" @click="login" value="ingresar"/>
+                </form>
+            </div>
+        </div>   
+      </div>
+    </div>
+  </div>
+</div>
     </div>
 </template>

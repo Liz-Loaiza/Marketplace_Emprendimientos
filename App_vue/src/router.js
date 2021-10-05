@@ -18,7 +18,7 @@ Vue.use(Router);
         {
             path: '/registro',
             name: 'registro',
-            component:  Registro
+            component: Registro
         },
    
         {

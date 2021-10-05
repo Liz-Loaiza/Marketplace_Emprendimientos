@@ -1,30 +1,39 @@
 const express = require('express');
 const app = express();
-
 const mongoose= require('mongoose');
 const morgan =require('morgan');
 const indexRouter = require('./routes/index');
+const cors = require('cors');
+const path = require('path');
 //configuraciones
 app.set('port', process.env.PORT || 3000);
-mongoose.connect('mongodb+srv://root:root@cluster0.0zjbz.mongodb.net/Cluster0?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://root:toor@marketplacecluster.alyfo.mongodb.net/Marketplace?retryWrites=true&w=majority')
 .then(db => console.log('conectado'))
 .catch(err => console.log('err'));
 
 
 //middleware
 app.use(morgan('dev'));
+app.use(express.json());
 app.use(express.urlencoded({extended: false}));
+app.use(cors());
 
 
-
-//rutas
+//rutas de este
 //app.get('/', (req,res)=>{
 //    res.send('hola nubaasssssaaaaadsssssi');
 //})
 
-app.use('/', indexRouter);
-
-
+//app.use('/', indexRouter);
+/* app.get('/', (req, res) => {
+    res.send('Hello World!');
+    });
+ */
+app.use('/api', require('./routes/index'));
+// Middleware para Vue.js router modo history
+ const history = require('connect-history-api-fallback');
+ app.use(history());
+ app.use(express.static(path.join(__dirname, 'public')))
 //inicializacion del servidor
  app.listen(app.get('port'), ()=>{
      console.log('server started');     
