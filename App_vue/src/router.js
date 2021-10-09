@@ -3,10 +3,12 @@ import  Router from 'vue-router';
 import Landing from '@/components/Landing';
 import Registro from '@/views/Registro'
 import Error from '@/views/Error404';
-
+import home from '@/views/Home'
+import Login from '@/views/Login'
+import Producto from '@/views/Producto'
 Vue.use(Router);
 
- export default new Router({
+const router = new Router({
     mode:'history',
     routes: [
         { 
@@ -20,6 +22,30 @@ Vue.use(Router);
             name: 'registro',
             component: Registro
         },
+        {
+            path: '/producto',
+            name: 'producto',
+            component: Producto,
+            meta: {
+                requiresAuth: true
+            }
+        },
+        {
+            path: '/home',
+            name: 'home',
+            component: home,
+            meta: {
+                requiresAuth: true
+            }
+        },
+        {
+            path: '/login',
+            name: 'login',
+            component: Login,
+            meta: {
+                isAuth: true
+            }
+        },
    
         {
             path: '*',
@@ -28,3 +54,35 @@ Vue.use(Router);
         }
     ]
  });
+
+ router.beforeEach((to,from,next)=>{
+    if(to.meta.requiresAuth){
+        if(!localStorage.getItem('token'))
+        {
+            next({
+                name: 'landing'
+            })
+        }else{
+            next()    
+        }
+        
+    }else{
+        next()
+    }
+
+    if(to.meta.isAuth)
+    {
+        if(localStorage.getItem('token'))
+        {
+            next({
+                name: 'login'
+            })
+        }else{
+            next()    
+        }
+    }else
+    {
+        next()
+    }
+});
+export default router

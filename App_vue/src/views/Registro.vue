@@ -9,7 +9,7 @@
 		@dismiss-count-down="countDownChanged" > 
 		{{mensaje.texto}} 
 		</b-alert>
-	<div class="container mt5" style="margin-top:100px">
+	<div class="container mt5" style="margin-top:150px">
 		<div class="row align-items-start">
 			<div class="col-5">
 				<div class="card mt-4">
@@ -17,8 +17,8 @@
 							<form action="">
 								<label  class="form-label" for="nombreusuario">Nombre Usuario</label>
 								<input class ="form-control" type="text" id="nombreusuario" v-model="form.nusuario"> 
-								<label  class="form-label" for="pass">Contraseña</label>
-								<input class ="form-control" type="password" id="pass" v-model="form.password"> 
+								<label  class="form-label" for="passwd">Contraseña</label>
+								<input class ="form-control" type="password" id="passwd" v-model="form.password"> 
 								<label  class="form-label" for="nombres">Nombres</label>
 								<input class ="form-control" type="text" id="nombres" v-model="form.nombres"> 
 								<label  class="form-label" for="apellidos">Apellidos</label>
@@ -27,7 +27,7 @@
 								<input class ="form-control" type="text" id="email" v-model="form.email">
 								<label  class="form-label" for="telefono">telefono</label>
 								<input class ="form-control" type="text" id="telefono" v-model="form.telefono">
-								<input class = "btn btn-primary" type="button" @click="agregarUsuario" value="Registrese"/>		
+								<input class = "btn btn-primary" type="button" @click="agregarUsuario" value="Registrese"/>	
 							</form>
 						</div>
 				</div>
@@ -87,9 +87,8 @@ export default {
 
 	components: {
 	AppHeader
-	},
+	}
 	
-
 }
  
 </script>

@@ -29,7 +29,7 @@ app.use(cors());
     res.send('Hello World!');
     });
  */
-app.use('/api', require('./routes/index'));
+app.use('/', require('./routes/index'));
 // Middleware para Vue.js router modo history
  const history = require('connect-history-api-fallback');
  app.use(history());

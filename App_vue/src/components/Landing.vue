@@ -163,7 +163,7 @@
             <div class="col-lg-3 col-md-4 col-6 mt-4">
                 <div class="icon-box">
                 <i class="ri-disc-line" style="color: #b20969;"></i>
-                <h3><a href="">Ropa</a></h3>
+                <h3><a href="">Moda</a></h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-6 mt-4">
@@ -184,6 +184,7 @@
         </section><!-- End Features Section -->
 
         <!-- ======= Cta Section ======= -->
+        <!--
         <section id="cta" class="cta">
         <div class="container">
 
@@ -194,8 +195,8 @@
             </div>
 
         </div>
-        </section><!-- End Cta Section -->
-
+        </section> End Cta Section 
+        -->
         <!-- ======= Portfolio Section ======= -->
         <section id="portfolio" class="portfolio">
         <div class="container">
@@ -220,103 +221,25 @@
 
             <div class="row portfolio-container">
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <img src="@/assets/img/portfolio/PerezosoCosido.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app" v-for="item in producto" v-bind:key="item._id">
+             <img src="@/assets/img/portfolio/PerezosoCosido.png" class="img-fluid" alt="">
+             <div class="portfolio-info" >
+                <h4>{{item.nombre_producto}}</h4>
+                <p>{{item.descripcion_producto}}</p>
+                <p>{{item.precio}}</p>
                 <a href="@/assets/img/portfolio/PerezosoCosido.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <img src="@/assets/img/portfolio/cojin bebe.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <a href="@/assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <img src="@/assets/img/portfolio/vestido.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <a href="@/assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <img src="@/assets/img/portfolio/tennis.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <a href="@/assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <img src="@/assets/img/portfolio/bolso.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <a href="@/assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <img src="@/assets/img/portfolio/cafe_quindio.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <a href="@/assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <img src="@/assets/img/portfolio/caja-de-trufas.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <a href="@/assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <img src="@/assets/img/portfolio/cerveza.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <a href="@/assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <img src="@/assets/img/portfolio/gatos.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <a href="@/assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-            </div>
-
+        
+          
             </div>
 
         </div>
         </section><!-- End Portfolio Section -->
 
         <!-- ======= Pricing Section ======= -->
-        <section id="pricing" class="pricing">
+      <!--   <section id="pricing" class="pricing">
         <div class="container">
 
             <div class="section-title">
@@ -382,7 +305,7 @@
             </div>
 
         </div>
-        </section><!-- End Pricing Section -->
+        </section> End Pricing Section --> 
 
         <!-- ======= F.A.Q Section ======= -->
         <section id="faq" class="faq">
@@ -575,7 +498,7 @@
             </div>
 
             <div>
-            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d608.4887918084!2d-74.11557349286022!3d4.616053028992343!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1633746470961!5m2!1ses!2sco" frameborder="0" allowfullscreen></iframe>
             </div>
 
             <div class="row mt-5">
@@ -650,6 +573,32 @@ import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 
 export default {
+    data() {
+        return {
+			producto: [],			      
+        }
+
+
+    },
+    created(){
+		this.ConsultarProductos()
+	},
+    methods: {
+		ConsultarProductos() {
+			this.axios.get('/productos')
+                .then(res => {
+                    console.log(res.data);
+                    this.producto = res.data;
+
+                })
+                .catch(e => {
+
+                    console.log(e.response);
+
+                })
+
+        }
+    },
     components:{
         AppHeader,
         AppFooter
