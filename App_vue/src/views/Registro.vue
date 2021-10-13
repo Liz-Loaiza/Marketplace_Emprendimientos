@@ -16,9 +16,9 @@
 						<div class="card-body">
 							<form action="">
 								<label  class="form-label" for="nombreusuario">Nombre Usuario</label>
-								<input class ="form-control" type="text" id="nombreusuario" v-model="form.nusuario"> 
+								<input class ="form-control" type="text" id="nombreusuario" v-model="form.nombreusuario"> 
 								<label  class="form-label" for="passwd">Contraseña</label>
-								<input class ="form-control" type="password" id="passwd" v-model="form.password"> 
+								<input class ="form-control" type="password" id="passwd" v-model="form.Contraseña"> 
 								<label  class="form-label" for="nombres">Nombres</label>
 								<input class ="form-control" type="text" id="nombres" v-model="form.nombres"> 
 								<label  class="form-label" for="apellidos">Apellidos</label>
@@ -48,12 +48,12 @@ export default {
             dismissSecs: 5, 
             dismissCountDown: 0,
             form:{
-				nusuario:'',
-				password:'',
-				nombres:'',
-				apellidos:'',
-                email:'',
-				telefono:''               
+				nombreusuario:"",
+				contraseña:"",
+				nombres:"",
+				apellidos:"",
+                email:"",
+				telefono:""               
             }
         }
 
@@ -63,8 +63,8 @@ export default {
             this.axios.post('/registro',this.form)
             .then(res=>{
 				this.usuarios.push(res.data)
-				this.form.nusuario="";
-				this.form.password="";
+				this.form.nombreusuario="";
+				this.form.contraseña="";
 				this.form.nombres="";
 				this.form.apellidos="";
 				this.form.email="";
