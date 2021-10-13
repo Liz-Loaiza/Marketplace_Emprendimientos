@@ -4,6 +4,8 @@ const usuario =require('../models/Usuario')
 const authService =require('../services/auth.service')
 const producto = require('../models/Producto')
 const categoria= require('../models/Categorias')
+const upload= require('../helpers/storage');
+const Producto = require('../models/Producto');
 //routes
 router.get('/',async(req,res)=>{  
     res.send('Enviando datos get ...')  
@@ -33,12 +35,32 @@ router.post('/registro', async(req, res) => {
     res.send('Enviando datos post ...');
   });  
 
+  // router.post('/producto', async(req, res) => {
+  //   const body = req.body;
+  //   try {
+  //     console.log("hola")
+  //   const productDB = await producto.create(body);
+  //   res.status(200).json(productDB);
+  //   res.send(productDB);
+  //   } catch (error) {
+  //   return res.status(500).json({
+  //   mensaje: 'Ocurrio un error',
+  //   error
+  //   })
+  //   }
+  //   });
+
+
+  //INTENTO 1-IMG
   router.post('/producto', async(req, res) => {
     const body = req.body;
     try {
-      console.log("hola")
+    console.log("hola")
+    const {filename}=req.file;
+    productDB.setImg(filename);
     const productDB = await producto.create(body);
     res.status(200).json(productDB);
+    res.send(productDB);
     } catch (error) {
     return res.status(500).json({
     mensaje: 'Ocurrio un error',
@@ -46,6 +68,25 @@ router.post('/registro', async(req, res) => {
     })
     }
     });
+
+  //INTENTO 2-IMG
+  // router.post('/producto', upload.single('image'), async(req, res) => {
+    
+  //   try {
+  //   const producto = new Producto(req.body);
+  //   console.log("hola");
+  //   const {filename}=req.file;
+  //   producto.setImg(filename);
+  //   console.log("hola");
+  //   await producto.save();
+  //   res.send(producto);
+  //   } catch (error) {
+  //   return res.status(500).json({
+  //   mensaje: 'Ocurrio un error',
+  //   error
+  //   })
+  //   }
+  //   });
     
     router.get('/producto/:id', async(req, res)=>{
 
