@@ -5,6 +5,7 @@ const morgan =require('morgan');
 const indexRouter = require('./routes/index');
 const cors = require('cors');
 const path = require('path');
+
 //configuraciones
 app.set('port', process.env.PORT || 3000);
 mongoose.connect('mongodb+srv://root:toor@marketplacecluster.alyfo.mongodb.net/Marketplace?retryWrites=true&w=majority')
@@ -12,6 +13,8 @@ mongoose.connect('mongodb+srv://root:toor@marketplacecluster.alyfo.mongodb.net/M
 .catch(err => console.log('err'));
 
 app.use('/public', express.static(path.join(__dirname, '../uploads/img')))
+
+
 //middleware
 app.use(morgan('dev'));
 app.use(express.json());

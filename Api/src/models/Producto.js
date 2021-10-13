@@ -9,5 +9,8 @@ id_categoria: {type: mongoose.ObjectId}
 {collection : 'Producto'}
 );
 
-module.exports= mongoose.model('producto', productoSchema);
+productoSchema.methods.setImg= function(file){
+    this.img= '/public/'+file
+}
+module.exports= mongoose.model('Producto', productoSchema);
 //export default usuario;

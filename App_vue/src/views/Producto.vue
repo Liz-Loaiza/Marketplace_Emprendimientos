@@ -78,7 +78,7 @@ export default {
 				nombre_producto:'',
 				descripcion_producto:'',
 				precio:'',
-                id_categoria: ''				             
+                id_categoria: ''	                                                                                                                                                                                                                                                                                                                                                                                                         			             
             },
 		producto_modificar:{},
 		modificar:false,
