@@ -4,7 +4,8 @@ const productoSchema = new Schema({
 nombre_producto: {type: String},    
 descripcion_producto: {type: String},    
 precio: {type: Number},
-id_categoria: {type: mongoose.ObjectId}
+id_categoria: {type: mongoose.ObjectId},
+img: {type: String}
 },
 {collection : 'Producto'}
 );

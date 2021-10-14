@@ -6,19 +6,20 @@
 			<div class="col-5">
 				<div class="card mt-4">
 						<div class="card-body">
-							<form action="" v-if="!modificar">
+							<form @submit="agregarProducto" enctype="multipart/form-data" v-if="!modificar">
 								<label  class="form-label" for="nombreproducto">Nombre del producto</label>
-								<input class ="form-control" type="text" id="nproducto" v-model="form.nombre_producto"> 								
+								<input class ="form-control" type="text" id="nombre_producto" v-model="nombre_producto"> 								
 								<label  class="form-label" for="descproducto">Descripcion del producto</label>
-								<input class ="form-control" type="text" id="dproducto" v-model="form.descripcion_producto"> 
+								<input class ="form-control" type="text" id="descripcion_producto" v-model="descripcion_producto"> 
 								<label  class="form-label" for="precio">Precio</label>
-								<input class ="form-control" type="text" id="precio" v-model="form.precio"> 
+								<input class ="form-control" type="number" id="precio" v-model="precio"> 
                                 <label  class="form-label" for="categoria">categoria</label>								
-                                <select v-model="form.id_categoria" class="form-control" id="categoria">
-                                       <option v-for="(item, index) in options" :key="index" :value="item._id">{{item.nombre_categoria}}</option>
+                                <select v-model="id_categoria" class="form-control" id="id_categoria">                                
+                                <option v-for="(item, index) in options" :key="index" :value="item._id">{{item.nombre_categoria}}</option>
                                 </select>
-                               
-								<input class = "btn btn-primary" type="button" @click="agregarProducto" value="Agregar producto"/>		
+                                <label  class="form-label" for="imglbl">Imagen del producto</label>
+                               <input class ="form-control" type="file" id="img" name="img" @change="onFileChange" accept =".png, .jpg, .jpeg" required> 
+								<input class = "btn btn-primary" type="submit" value="Agregar producto"/>		
 							</form>
 						</div>
 				</div>
@@ -46,6 +47,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Producto</th>
                 <th scope="col">Descripcion</th>
+                <th scope="col">Precio</th>
                 <th scope="col">Acciones</th>
             </tr>
         </thead>
@@ -69,17 +71,23 @@
 
 <script>
 import AppHeader from '@/components/AppHeader';
-
+import axios from 'axios'
 export default {
     data() {
         return {
+            nombre_producto:'',
+            descripcion_producto:'',
+            precio:0,
+            id_categoria: '',	                                                                                                                                                                                                                                                                                                                                                                                                         			             
+            img:'',  
 			producto: [],			
-            form:{
+           /*  form:{
 				nombre_producto:'',
 				descripcion_producto:'',
-				precio:'',
-                id_categoria: ''	                                                                                                                                                                                                                                                                                                                                                                                                         			             
-            },
+				precio:0,
+                id_categoria: '',	                                                                                                                                                                                                                                                                                                                                                                                                         			             
+                img:''
+            }, */
 		producto_modificar:{},
 		modificar:false,
         selected: {},
@@ -95,8 +103,7 @@ export default {
     methods: {
 		ConsultarProductos() {
 			this.axios.get('/productos')
-                .then(res => {
-                 //   console.log(res.data);
+                .then(res => {                 
                     this.producto = res.data;
 
                 })
@@ -109,8 +116,7 @@ export default {
         },
         ConsultarCategorias() {
 			this.axios.get('/categorias')
-                .then(res => { 
-                  //  console.log(res.data)
+                .then(res => {                 
                     this.options=res.data
                 })
                 .catch(e => {
@@ -120,23 +126,47 @@ export default {
 
         },
 		agregarProducto(){
-            this.axios.post('/producto',this.form)
-            .then(res=>{
-				this.producto.push(res.data)
-				this.form.nombre_producto="";
-				this.form.descripcion_producto="";
-				this.form.precio="";				
-                this.form.id_categoria="";
-            })
-            .catch(e=>{
-                console.log(e.response);
-            })	
+           
+            // this.axios.post('/producto',this.form)
+            // .then(res=>{
+			// 	this.producto.push(res.data)
+			// 	this.form.nombre_producto="";
+			// 	this.form.descripcion_producto="";
+			// 	this.form.precio="";				
+            //     this.form.id_categoria="";
+            //     this.form.img=""
+            // })
+            // .catch(e=>{
+            //     console.log(e.response);
+            // })
+            let formData = new FormData()
+            formData.append('nombre_producto', this.nombre_producto)
+            formData.append('descripcion_producto', this.descripcion_producto)
+            formData.append('precio', this.precio)
+            formData.append('id_categoria', this.id_categoria)
+            formData.append('img', this.img)
+            axios.post('http://localhost:3000/producto', formData,{
+                header:{
+                    'Access-Control-Allow-Methods':'POST'
+                }
+                })
+                .then((response)=>
+                {
+                    console.log(response.data)
+                    this.$router.push('/producto')
+                })
+            // try{
+            // this.axios.post('/producto', formData)
+            // }catch(err){
+            //     console.log(err)    
+            // }
+
         },
+
 		eliminarNProducto(id){
 
             this.axios.delete(`/producto/${id}`)
             .then(res=>{
-
                 const index = this.producto.findIndex(item=> item._id===res.data._id);
                 this.producto.splice(index, 1);
                // this.mensaje.color="success";
@@ -192,6 +222,12 @@ export default {
 
 
         },	
+          onFileChange(e){
+            let files = e.target.files || e.dataTransfer.files
+            if(!files.length) return
+            this.img =files[0]
+
+        }
 	},
 	
     components: {

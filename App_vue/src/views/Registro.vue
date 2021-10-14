@@ -1,7 +1,9 @@
 <template>
 	<div>
 		<app-header></app-header>
-			<b-alert 
+	
+	<div class="container mt5" style="margin-top:150px">
+		<b-alert 
 		:show="dismissCountDown" 
 		dismissible 
 		:variant="mensaje.color" 
@@ -9,7 +11,6 @@
 		@dismiss-count-down="countDownChanged" > 
 		{{mensaje.texto}} 
 		</b-alert>
-	<div class="container mt5" style="margin-top:150px">
 		<div class="row align-items-start">
 			<div class="col-5">
 				<div class="card mt-4">

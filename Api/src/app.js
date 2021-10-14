@@ -12,7 +12,7 @@ mongoose.connect('mongodb+srv://root:toor@marketplacecluster.alyfo.mongodb.net/M
 .then(db => console.log('conectado'))
 .catch(err => console.log('err'));
 
-app.use('/public', express.static(path.join(__dirname, '../uploads/img')))
+app.use('/public/', express.static(path.join(__dirname, '../uploads/img/')))
 
 
 //middleware

@@ -222,7 +222,7 @@
             <div class="row portfolio-container">
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-app" v-for="item in producto" v-bind:key="item._id">
-             <img src="@/assets/img/portfolio/PerezosoCosido.png" class="img-fluid" alt="">
+             <img :src="url+item.img" class="img-fluid" alt="">
              <div class="portfolio-info" >
                 <h4>{{item.nombre_producto}}</h4>
                 <p>{{item.descripcion_producto}}</p>
@@ -575,6 +575,7 @@ import AppFooter from '@/components/AppFooter.vue'
 export default {
     data() {
         return {
+            url: 'http://localhost:3000',
 			producto: [],			      
         }
 
@@ -588,8 +589,7 @@ export default {
 			this.axios.get('/productos')
                 .then(res => {
                     console.log(res.data);
-                    this.producto = res.data;
-
+                    this.producto = res.data;                 
                 })
                 .catch(e => {
 
