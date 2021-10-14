@@ -58,128 +58,22 @@
             <h2>Categorías</h2>
             <h3>Ofrecemos productos y servicios en diferentes <span>Categorías</span></h3>
             <p>Para facilitar tu búsqueda puedes encontrar la información por tus emprendimientos favoritos o por la categoría de los productos que estas buscando.</p>
-            </div>
-
-            <div class="row">
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="icon-box">
-                <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                <h4 class="title"><a href="">kakahuat</a></h4>
-                <p class="description"> empresa Santandereana dedicada a la fabricación de chocolatería fina y pasteleria Francesa que trabaja con el mejor talento humano, para endulzar los buenos momentos de sus clientes.</p>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="icon-box">
-                <div class="icon"><i class="bx bx-file"></i></div>
-                <h4 class="title"><a href="">PitNatu</a></h4>
-                <p class="description">Es la única compañía latinoamericana dedicada a producir y comercializar pitillos 100% Naturales, 
-                    y la única en el mundo en fabricar y comercializar  mezcladores de bebida calientes que en su proceso de degradación pueden germinar en una plata o fertilizar un entorno natural.</p>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="icon-box">
-                <div class="icon"><i class="bx bx-tachometer"></i></div>
-                <h4 class="title"><a href="">Naty London</a></h4>
-                <p class="description">Empresa caleña dedicada al diseño de zapatos, carteras, bolsos y accesorios de la mejor calidad y 100% producto colombiano.”
-
-</p>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                <div class="icon-box">
-                <div class="icon"><i class="bx bx-world"></i></div>
-                <h4 class="title"><a href="">Educambio</a></h4>
-                <p class="description"> Cuadernos ecológicos con diseños exclusivos realizados por artistas, con la compra de estos se aporta al programa Becas de Cambio que libera esta fundación.</p>
-‍                </div>
-            </div>
-
-            </div>
+            </div>     
 
         </div>
         </section><!-- End Services Section -->
 
         <!-- ======= Features Section ======= -->
         <section id="features" class="features">
-        <div class="container">
-
+        <div class="container">         
             <div class="row">
-            <div class="col-lg-3 col-md-4 col-6 col-6">
+            <div class="col-lg-3 col-md-4 col-6 col-6" v-for= "cat in categorias" v-bind:key= "cat._id">
                 <div class="icon-box">
-                <i class="ri-store-line" style="color: #ffbb2c;"></i>
-                <h3><a href="">Servicios</a></h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <div class="icon-box">
-                <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-                <h3><a href="">Accesorios y Joyas</a></h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6 mt-4 mt-md-0">
-                <div class="icon-box">
-                <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-                <h3><a href="">Papelería y Mercería</a></h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6 mt-4 mt-lg-0">
-                <div class="icon-box">
-                <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-                <h3><a href="">Hogar y Muebles</a></h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6 mt-4">
-                <div class="icon-box">
-                <i class="ri-database-2-line" style="color: #47aeff;"></i>
-                <h3><a href="">Agro</a></h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6 mt-4">
-                <div class="icon-box">
-                <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-                <h3><a href="">Alimentos y bebidas</a></h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6 mt-4">
-                <div class="icon-box">
-                <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-                <h3><a href="">Juegos y Juguetes</a></h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6 mt-4">
-                <div class="icon-box">
-                <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-                <h3><a href="">Deportes y Fitness</a></h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6 mt-4">
-                <div class="icon-box">
-                <i class="ri-anchor-line" style="color: #b2904f;"></i>
-                <h3><a href="">Salud y equipamento médico</a></h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6 mt-4">
-                <div class="icon-box">
-                <i class="ri-disc-line" style="color: #b20969;"></i>
-                <h3><a href="">Moda</a></h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6 mt-4">
-                <div class="icon-box">
-                <i class="ri-base-station-line" style="color: #ff5828;"></i>
-                <h3><a href="">Animales y mascotas</a></h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6 mt-4">
-                <div class="icon-box">
-                <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-                <h3><a href="">Otras categorías</a></h3>
-                </div>
+                <i :class="cat.icon" :style="cat.color"></i>
+                <h3><a :href="'/vistaproducto/'+cat._id">{{cat.nombre_categoria}}</a></h3>
+                </div>           
             </div>
             </div>
-
         </div>
         </section><!-- End Features Section -->
 
@@ -227,8 +121,8 @@
                 <h4>{{item.nombre_producto}}</h4>
                 <p>{{item.descripcion_producto}}</p>
                 <p>{{item.precio}}</p>
-                <a href="@/assets/img/portfolio/PerezosoCosido.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                <a :href="url+item.img" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" :title="item.nombre_producto"><i class="bx bx-plus"></i></a>
+                <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
             </div>
         
@@ -576,13 +470,13 @@ export default {
     data() {
         return {
             url: 'http://localhost:3000',
-			producto: [],			      
+			producto: [],
+            categorias: []			      
         }
-
-
     },
     created(){
 		this.ConsultarProductos()
+        this.ConsultarCategorias()
 	},
     methods: {
 		ConsultarProductos() {
@@ -592,13 +486,22 @@ export default {
                     this.producto = res.data;                 
                 })
                 .catch(e => {
+                    console.log(e.response);
+                })
 
+        },
+        ConsultarCategorias() {
+			this.axios.get('/categorias')
+                .then(res => {                 
+                    this.categorias=res.data
+                })
+                .catch(e => {
                     console.log(e.response);
 
                 })
-
         }
     },
+      
     components:{
         AppHeader,
         AppFooter

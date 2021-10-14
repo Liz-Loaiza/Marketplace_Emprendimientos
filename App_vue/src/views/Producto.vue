@@ -123,7 +123,6 @@ export default {
                     console.log(e.response);
 
                 })
-
         },
 		agregarProducto(){
            
@@ -160,7 +159,6 @@ export default {
             // }catch(err){
             //     console.log(err)    
             // }
-
         },
 
 		eliminarNProducto(id){

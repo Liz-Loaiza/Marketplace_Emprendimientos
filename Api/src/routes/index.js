@@ -106,14 +106,29 @@ router.post('/registro', async(req, res) => {
           
       }  
   });
-  
+  router.get('/productoxcat/:id', async(req, res)=>{
+    const _id = req.params.id;
+    console.log(_id)
+    try {
+        const prodDB= await Producto.find({id_categoria:_id});
+        res.json(prodDB);
+        
+    } catch (error) {
+
+        return res.status(500).json({
+            mensaje:'Ocurrio un error '+_id,
+            error
+        })
+        
+    }  
+});
   //Get con todos los documentos
   
   router.get('/productos',async(req,res)=>{
   
       try {
   
-          const prodDB=await Producto.find();
+          const prodDB=await Producto.find();         
           res.json(prodDB);
           
       } catch (error) {

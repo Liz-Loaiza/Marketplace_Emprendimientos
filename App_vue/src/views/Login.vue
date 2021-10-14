@@ -44,7 +44,8 @@ export default {
     methods: {
         login(){
             if(localStorage.getItem('token') === null)
-                {
+              {
+                console.log("validacion de datos")
                 let formData = new URLSearchParams()
                 formData.append('nombreusuario', this.form.nombreusuario)
                 formData.append('contraseña',this.form.contraseña)
@@ -60,9 +61,9 @@ export default {
                 })   .catch(e=>{
                 console.log(e.response);
             })   
-        } else{
-            this.message='Ya hay una sesion iniciada'
-            this.$router.push('/home')
+       } else{
+           this.message='Ya hay una sesion iniciada'
+           this.$router.push('/home')
         }                     
         }
     }

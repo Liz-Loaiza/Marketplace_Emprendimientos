@@ -6,6 +6,7 @@ import Error from '@/views/Error404';
 import home from '@/views/Home'
 import Login from '@/views/Login'
 import Producto from '@/views/Producto'
+import vistaProducto from '@/views/VistaProducto'
 Vue.use(Router);
 
 const router = new Router({
@@ -21,6 +22,11 @@ const router = new Router({
             path: '/registro',
             name: 'registro',
             component: Registro
+        },
+        {
+            path: '/vistaproducto/:id',
+            name: 'vistaProducto',
+            component: vistaProducto
         },
         {
             path: '/producto',
